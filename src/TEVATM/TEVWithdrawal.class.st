@@ -7,6 +7,21 @@ Class {
 	#category : #TEVATM
 }
 
+{ #category : #'instance creation' }
+TEVWithdrawal class >> new: number [ 
+	^ self new amountToWithdraw: number
+]
+
+{ #category : #accessing }
+TEVWithdrawal >> amountToWithdraw [
+	^ amountToWithdraw
+]
+
+{ #category : #accessing }
+TEVWithdrawal >> amountToWithdraw: anObject [
+	amountToWithdraw := anObject
+]
+
 { #category : #initialization }
 TEVWithdrawal >> initialize [ 
 	super initialize.

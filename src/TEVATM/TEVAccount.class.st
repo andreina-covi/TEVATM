@@ -8,6 +8,11 @@ Class {
 	#category : #TEVATM
 }
 
+{ #category : #comparing }
+TEVAccount >> = otherAccount [
+	^ otherAccount class == self class and: [ otherAccount pin = pin and: [ otherAccount balance = balance ] ]
+]
+
 { #category : #accessing }
 TEVAccount >> balance [
 

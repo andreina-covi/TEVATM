@@ -7,6 +7,21 @@ Class {
 	#category : #TEVATM
 }
 
+{ #category : #'instance creation' }
+TEVDeposit class >> new: number [ 	
+	^ self new amountToDeposit: number
+]
+
+{ #category : #accessing }
+TEVDeposit >> amountToDeposit [
+	^ amountToDeposit
+]
+
+{ #category : #accessing }
+TEVDeposit >> amountToDeposit: anObject [
+	amountToDeposit := anObject
+]
+
 { #category : #initialization }
 TEVDeposit >> initialize [ 
 	super initialize.
