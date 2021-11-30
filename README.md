@@ -2,7 +2,7 @@
 
 ```Smalltalk
  Metacello new
- baseline:'TEVATM';
+ baseline:'TEV';
  repository: 'github://andreina-covi/TEVATM:master/src';
  load
  ```
