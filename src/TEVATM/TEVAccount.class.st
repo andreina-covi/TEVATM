@@ -1,0 +1,49 @@
+Class {
+	#name : #TEVAccount,
+	#superclass : #Object,
+	#instVars : [
+		'balance',
+		'pin'
+	],
+	#category : #TEVATM
+}
+
+{ #category : #accessing }
+TEVAccount >> balance [
+
+	^ balance
+]
+
+{ #category : #accessing }
+TEVAccount >> balance: anObject [
+
+	balance := anObject
+]
+
+{ #category : #'as yet unclassified' }
+TEVAccount >> deposit: number [
+
+	balance := balance + number
+]
+
+{ #category : #initialization }
+TEVAccount >> initialize [
+
+	balance := 0.0
+]
+
+{ #category : #accessing }
+TEVAccount >> pin [ 
+	^ pin
+]
+
+{ #category : #accessing }
+TEVAccount >> pin: anObject [
+
+	pin := anObject
+]
+
+{ #category : #'as yet unclassified' }
+TEVAccount >> withdraw: number [
+	balance := balance - number
+]
